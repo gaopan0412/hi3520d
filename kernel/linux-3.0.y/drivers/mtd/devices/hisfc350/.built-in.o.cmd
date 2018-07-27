@@ -1,0 +1,1 @@
+cmd_drivers/mtd/devices/hisfc350/built-in.o :=  arm-hisiv100nptl-linux-ld -EL    -r -o drivers/mtd/devices/hisfc350/built-in.o drivers/mtd/devices/hisfc350/hisfc350_spi_ids.o drivers/mtd/devices/hisfc350/hisfc350.o 

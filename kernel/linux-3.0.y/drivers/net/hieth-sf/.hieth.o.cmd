@@ -1,0 +1,1 @@
+cmd_drivers/net/hieth-sf/hieth.o := arm-hisiv100nptl-linux-ld -EL    -r -o drivers/net/hieth-sf/hieth.o drivers/net/hieth-sf/mdio.o drivers/net/hieth-sf/mii.o drivers/net/hieth-sf/mac.o drivers/net/hieth-sf/ctrl.o drivers/net/hieth-sf/glb.o drivers/net/hieth-sf/net.o drivers/net/hieth-sf/sys.o drivers/net/hieth-sf/phy_id.o 
