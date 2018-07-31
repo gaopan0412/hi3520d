@@ -1,4 +1,4 @@
-cmd_lib/zlib_inflate/infutil.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,lib/zlib_inflate/.infutil.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(infutil)"  -D"KBUILD_MODNAME=KBUILD_STR(zlib_inflate)" -c -o lib/zlib_inflate/infutil.o lib/zlib_inflate/infutil.c
+cmd_lib/zlib_inflate/infutil.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,lib/zlib_inflate/.infutil.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(infutil)"  -D"KBUILD_MODNAME=KBUILD_STR(zlib_inflate)" -c -o lib/zlib_inflate/infutil.o lib/zlib_inflate/infutil.c
 
 source_lib/zlib_inflate/infutil.o := lib/zlib_inflate/infutil.c
 
@@ -24,15 +24,15 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/posix_types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/posix_types.h \
   /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include/stdarg.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/string.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/string.h \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/spinlock/sleep.h) \
@@ -43,11 +43,11 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/compaction.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
   include/linux/linkage.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitops.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/system.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/system.h \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
@@ -63,15 +63,15 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/irqflags.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/irqflags.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/outercache.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
@@ -83,7 +83,7 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/arm/patch/phys/virt/16bit.h) \
   include/linux/const.h \
   arch/arm/mach-hi3520d/include/mach/memory.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
@@ -99,10 +99,10 @@ deps_lib/zlib_inflate/infutil.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/byteorder.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/swab.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/linux/log2.h \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
@@ -114,15 +114,15 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bug.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/div64.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/div64.h \
   include/linux/errno.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/errno.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/slab.h \
@@ -164,12 +164,12 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/preempt/notifiers.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/list.h \
@@ -186,20 +186,20 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
   include/linux/spinlock_up.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/processor.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hw_breakpoint.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_up.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/atomic.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/atomic.h \
     $(wildcard include/config/generic/atomic64.h) \
   include/asm-generic/atomic-long.h \
   include/linux/wait.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/current.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/current.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/cache.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/threads.h \
@@ -214,7 +214,7 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/hugetlb/page.h) \
     $(wildcard include/config/hugetlb/page/size/variable.h) \
   include/generated/bounds.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/page.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -222,7 +222,7 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/cpu/copy/fa.h) \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/glue.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/glue.h \
   include/asm-generic/getorder.h \
   include/linux/memory_hotplug.h \
     $(wildcard include/config/memory/hotremove.h) \
@@ -252,11 +252,11 @@ deps_lib/zlib_inflate/infutil.o := \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
     $(wildcard include/config/have/setup/per/cpu/area.h) \
   include/linux/pfn.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/percpu.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/topology.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/topology.h \
   include/asm-generic/topology.h \
   include/linux/mmdebug.h \
     $(wildcard include/config/debug/vm.h) \
@@ -279,9 +279,9 @@ deps_lib/zlib_inflate/infutil.o := \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/linux/param.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/param.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/timex.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/timex.h \
   arch/arm/mach-hi3520d/include/mach/timex.h \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects/free.h) \

@@ -13,7 +13,7 @@
 @	compiled by GNU C version 4.4.3, GMP version 4.3.1, MPFR version 2.4.2.
 @ GGC heuristics: --param ggc-min-expand=98 --param ggc-min-heapsize=128306
 @ options passed:  -nostdinc
-@ -I/home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include
+@ -I/home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include
 @ -Iarch/arm/include/generated -Iinclude -Iarch/arm/mach-hi3520d/include
 @ -imultilib armv7a_soft -iprefix
 @ /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/

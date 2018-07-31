@@ -1,4 +1,4 @@
-cmd_net/ipv4/inet_timewait_sock.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,net/ipv4/.inet_timewait_sock.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(inet_timewait_sock)"  -D"KBUILD_MODNAME=KBUILD_STR(inet_timewait_sock)" -c -o net/ipv4/inet_timewait_sock.o net/ipv4/inet_timewait_sock.c
+cmd_net/ipv4/inet_timewait_sock.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,net/ipv4/.inet_timewait_sock.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(inet_timewait_sock)"  -D"KBUILD_MODNAME=KBUILD_STR(inet_timewait_sock)" -c -o net/ipv4/inet_timewait_sock.o net/ipv4/inet_timewait_sock.c
 
 source_net/ipv4/inet_timewait_sock.o := net/ipv4/inet_timewait_sock.c
 
@@ -26,23 +26,23 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
   include/linux/stddef.h \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/posix_types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/posix_types.h \
   include/linux/bitops.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitops.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/system.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/system.h \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
@@ -58,15 +58,15 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/irqflags.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/irqflags.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/outercache.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
@@ -78,7 +78,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/arm/patch/phys/virt/16bit.h) \
   include/linux/const.h \
   arch/arm/mach-hi3520d/include/mach/memory.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
@@ -94,10 +94,10 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/byteorder.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/swab.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/linux/log2.h \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
@@ -109,13 +109,13 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bug.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/div64.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/div64.h \
   include/linux/kmemcheck.h \
     $(wildcard include/config/kmemcheck.h) \
   include/linux/mm_types.h \
@@ -127,7 +127,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/transparent/hugepage.h) \
     $(wildcard include/config/cpumask/offstack.h) \
   include/linux/auxvec.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/auxvec.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/auxvec.h \
   include/linux/threads.h \
     $(wildcard include/config/nr/cpus.h) \
     $(wildcard include/config/base/small.h) \
@@ -145,12 +145,12 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/preempt/notifiers.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/stringify.h \
@@ -163,13 +163,13 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
   include/linux/spinlock_up.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/processor.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hw_breakpoint.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_up.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/atomic.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/atomic.h \
     $(wildcard include/config/generic/atomic64.h) \
   include/asm-generic/atomic-long.h \
   include/linux/prio_tree.h \
@@ -179,7 +179,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/rwsem-spinlock.h \
   include/linux/completion.h \
   include/linux/wait.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/current.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/current.h \
   include/linux/cpumask.h \
     $(wildcard include/config/hotplug/cpu.h) \
     $(wildcard include/config/debug/per/cpu/maps.h) \
@@ -187,11 +187,11 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/bitmap.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/string.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/string.h \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/debug/something/else.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/page.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -200,9 +200,9 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
     $(wildcard include/config/have/arch/pfn/valid.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/glue.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/glue.h \
   include/asm-generic/getorder.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/mmu.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
   include/linux/slab.h \
     $(wildcard include/config/slab/debug.h) \
@@ -233,7 +233,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/arch/has/holes/memorymodel.h) \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/cache.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/numa.h \
@@ -249,7 +249,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/have/arch/nodedata/extension.h) \
   include/linux/notifier.h \
   include/linux/errno.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/errno.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/mutex.h \
@@ -268,11 +268,11 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
     $(wildcard include/config/have/setup/per/cpu/area.h) \
   include/linux/pfn.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/percpu.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/topology.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/topology.h \
   include/asm-generic/topology.h \
   include/linux/mmdebug.h \
     $(wildcard include/config/debug/vm.h) \
@@ -295,9 +295,9 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/linux/param.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/param.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/timex.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/timex.h \
   arch/arm/mach-hi3520d/include/mach/timex.h \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects/free.h) \
@@ -324,9 +324,9 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/tiny/preempt/rcu.h) \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hardirq.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hardirq.h \
     $(wildcard include/config/local/timers.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/irq.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/irq.h \
   arch/arm/mach-hi3520d/include/mach/irqs.h \
   include/linux/irq_cpustat.h \
   include/linux/hrtimer.h \
@@ -363,16 +363,16 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/network/phy/timestamping.h) \
   include/linux/net.h \
   include/linux/socket.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/socket.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sockios.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/socket.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sockios.h \
   include/linux/sockios.h \
   include/linux/uio.h \
   include/linux/random.h \
   include/linux/ioctl.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/ioctl.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/linux/fcntl.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/fcntl.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/textsearch.h \
   include/linux/module.h \
@@ -384,26 +384,26 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/debug/set/module/ronx.h) \
   include/linux/stat.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/stat.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/stat.h \
   include/linux/kmod.h \
   include/linux/sysctl.h \
   include/linux/elf.h \
   include/linux/elf-em.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/elf.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/user.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/elf.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/user.h \
   include/linux/moduleparam.h \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ia64.h) \
     $(wildcard include/config/ppc64.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/module.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
   include/trace/events/module.h \
   include/linux/err.h \
   include/net/checksum.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/uaccess.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/unified.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/uaccess.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/checksum.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/checksum.h \
   include/linux/in6.h \
   include/linux/dmaengine.h \
     $(wildcard include/config/async/tx/enable/channel/switch.h) \
@@ -418,7 +418,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/pm.h \
     $(wildcard include/config/pm.h) \
     $(wildcard include/config/pm/runtime.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/device.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
   include/linux/pm_wakeup.h \
   include/linux/dma-mapping.h \
@@ -429,7 +429,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/bug.h \
   include/linux/scatterlist.h \
     $(wildcard include/config/debug/sg.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/scatterlist.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/scatterlist.h \
   include/asm-generic/scatterlist.h \
     $(wildcard include/config/need/sg/dma/length.h) \
   include/linux/mm.h \
@@ -443,11 +443,11 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/debug/locking/api/selftests.h) \
   include/linux/range.h \
   include/linux/bit_spinlock.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/pgtable.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   include/asm-generic/4level-fixup.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/proc-fns.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/glue-proc.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/proc-fns.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/glue-proc.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm710.h) \
@@ -469,7 +469,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/cpu/v6k.h) \
     $(wildcard include/config/cpu/v7.h) \
   arch/arm/mach-hi3520d/include/mach/vmalloc.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/pgtable-hwdef.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/pgtable-hwdef.h \
   include/asm-generic/pgtable.h \
   include/linux/page-flags.h \
     $(wildcard include/config/pageflags/extended.h) \
@@ -481,9 +481,9 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/vmstat.h \
     $(wildcard include/config/vm/event/counters.h) \
   include/linux/vm_event_item.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/io.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/io.h \
   arch/arm/mach-hi3520d/include/mach/io.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/dma-mapping.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/dma-mapping.h \
   include/linux/dma-debug.h \
     $(wildcard include/config/dma/api/debug.h) \
   include/asm-generic/dma-coherent.h \
@@ -533,7 +533,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/miscdevice.h \
   include/linux/major.h \
   include/linux/delay.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/delay.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/delay.h \
   include/linux/rculist.h \
   include/linux/ethtool.h \
   include/linux/compat.h \
@@ -658,17 +658,17 @@ deps_net/ipv4/inet_timewait_sock.o := \
     $(wildcard include/config/have/unstable/sched/clock.h) \
     $(wildcard include/config/debug/stack/usage.h) \
     $(wildcard include/config/cgroup/sched.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/cputime.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/cputime.h \
   include/asm-generic/cputime.h \
   include/linux/sem.h \
   include/linux/ipc.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/ipcbuf.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sembuf.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/ipcbuf.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sembuf.h \
   include/linux/signal.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/signal.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sigcontext.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/siginfo.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sigcontext.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/linux/proportions.h \
   include/linux/seccomp.h \
@@ -676,7 +676,7 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
   include/linux/resource.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/resource.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/resource.h \
   include/asm-generic/resource.h \
   include/linux/task_io_accounting.h \
     $(wildcard include/config/task/io/accounting.h) \
@@ -691,17 +691,17 @@ deps_net/ipv4/inet_timewait_sock.o := \
   include/linux/aio_abi.h \
   include/linux/binfmts.h \
   include/linux/shm.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/shmparam.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/shmbuf.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/shmparam.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/shmbuf.h \
   include/linux/msg.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/msgbuf.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/msgbuf.h \
   include/net/flow.h \
   include/linux/uaccess.h \
   include/linux/filter.h \
     $(wildcard include/config/bpf/jit.h) \
   include/linux/rculist_nulls.h \
   include/linux/poll.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/poll.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/poll.h \
   include/asm-generic/poll.h \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \

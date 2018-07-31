@@ -1,4 +1,4 @@
-cmd_arch/arm/nwfpe/fpa11.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,arch/arm/nwfpe/.fpa11.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(fpa11)"  -D"KBUILD_MODNAME=KBUILD_STR(nwfpe)" -c -o arch/arm/nwfpe/fpa11.o arch/arm/nwfpe/fpa11.c
+cmd_arch/arm/nwfpe/fpa11.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,arch/arm/nwfpe/.fpa11.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(fpa11)"  -D"KBUILD_MODNAME=KBUILD_STR(nwfpe)" -c -o arch/arm/nwfpe/fpa11.o arch/arm/nwfpe/fpa11.c
 
 source_arch/arm/nwfpe/fpa11.o := arch/arm/nwfpe/fpa11.c
 
@@ -13,9 +13,9 @@ deps_arch/arm/nwfpe/fpa11.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/linux/posix_types.h \
   include/linux/stddef.h \
@@ -29,11 +29,11 @@ deps_arch/arm/nwfpe/fpa11.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/posix_types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/posix_types.h \
   include/linux/bitops.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitops.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitops.h \
     $(wildcard include/config/smp.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/system.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/system.h \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
@@ -44,22 +44,22 @@ deps_arch/arm/nwfpe/fpa11.o := \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
   include/linux/linkage.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
   include/linux/irqflags.h \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/irqflags.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/irqflags.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/outercache.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/thumb2/kernel.h) \
@@ -71,7 +71,7 @@ deps_arch/arm/nwfpe/fpa11.o := \
     $(wildcard include/config/arm/patch/phys/virt/16bit.h) \
   include/linux/const.h \
   arch/arm/mach-hi3520d/include/mach/memory.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
@@ -87,17 +87,17 @@ deps_arch/arm/nwfpe/fpa11.o := \
   include/asm-generic/bitops/const_hweight.h \
   include/asm-generic/bitops/lock.h \
   include/asm-generic/bitops/le.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/byteorder.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/swab.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/swab.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
   arch/arm/nwfpe/fpsr.h \
@@ -111,7 +111,7 @@ deps_arch/arm/nwfpe/fpa11.o := \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
   /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include/stdarg.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/string.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/string.h \
 
 arch/arm/nwfpe/fpa11.o: $(deps_arch/arm/nwfpe/fpa11.o)
 

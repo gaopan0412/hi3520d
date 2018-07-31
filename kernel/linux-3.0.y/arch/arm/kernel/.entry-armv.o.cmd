@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/entry-armv.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float        -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
+cmd_arch/arm/kernel/entry-armv.o := arm-hisiv100nptl-linux-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /opt/hisi-linux-nptl/arm-hisiv100-linux/bin/../lib/gcc/arm-hisiv100-linux-uclibcgnueabi/4.4.1/include -I/home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-hi3520d/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float        -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
 
 source_arch/arm/kernel/entry-armv.o := arch/arm/kernel/entry-armv.S
 
@@ -23,9 +23,9 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cc/stackprotector.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/unified.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/highmem.h) \
     $(wildcard include/config/dram/size.h) \
@@ -46,19 +46,19 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/types.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   arch/arm/mach-hi3520d/include/mach/memory.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/glue-df.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/glue-df.h \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
     $(wildcard include/config/cpu/abrt/ev4.h) \
     $(wildcard include/config/cpu/abrt/ev4t.h) \
@@ -66,26 +66,26 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cpu/abrt/ev5t.h) \
     $(wildcard include/config/cpu/abrt/ev6.h) \
     $(wildcard include/config/cpu/abrt/ev7.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/glue.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/glue-pf.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/glue.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/glue-pf.h \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/vfpmacros.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/vfpmacros.h \
     $(wildcard include/config/vfpv3.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/vfp.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hwcap.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/vfp.h \
   arch/arm/mach-hi3520d/include/mach/entry-macro.S \
   arch/arm/mach-hi3520d/include/mach/platform.h \
     $(wildcard include/config/base.h) \
   arch/arm/mach-hi3520d/include/mach/io.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/hardware/gic.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/thread_notify.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/unwind.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/hardware/gic.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/thread_notify.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/unwind.h \
     $(wildcard include/config/arm/unwind.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/unistd.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/tls.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/tls.h \
     $(wildcard include/config/tls/reg/emul.h) \
     $(wildcard include/config/cpu/v6.h) \
     $(wildcard include/config/cpu/32v6k.h) \
@@ -97,21 +97,21 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/linkage.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/assembler.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/linkage.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/ptrace.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/asm-offsets.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/asm-offsets.h \
   include/generated/asm-offsets.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/errno.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
-  /home/gaopan/project/linux_kernel/linux-3.0.y/arch/arm/include/asm/entry-macro-multi.S \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/fpstate.h \
+  /home/gaopan/hi3520/kernel/linux-3.0.y/arch/arm/include/asm/entry-macro-multi.S \
     $(wildcard include/config/local/timers.h) \
 
 arch/arm/kernel/entry-armv.o: $(deps_arch/arm/kernel/entry-armv.o)
