@@ -1,11 +1,11 @@
 #kernel path
-KDIR :=/home/gaopan/project/linux_kernel/linux-3.0.y
+KDIR :=/home/gaopan/hi3520/kernel/linux-3.0.y
 
 #current path
 PWD  :=$(shell pwd)
 
 #compile prefix
-CROSS_COMPILE =/opt/hisi-linux-nptl/arm-hisiv100-linux/target/bin/arm-hisiv100nptl-linux-
+CROSS_COMPILE =arm-hisiv100nptl-linux-
 CC            =$(CROSS_COMPILE)gcc
 LD            =$(CROSS_COMPILE)ld
 obj-m :=beep.o
